@@ -22,18 +22,13 @@
 
 // TODO: findUserByName 함수를 작성하세요.
 function findUserByName(users, name) {
-  let userName = users.find(function (user) {
-    return user == name;
-  });
-  return userName || null;
+  const findName = users.find((element) => element.name === name);
+  return findName ? findName : null;
 }
 
 // TODO: findIndexOf 함수를 작성하세요.
 function findIndexOf(arr, value) {
-  let arrIdx = arr.findIndex(function (idx) {
-    return idx == value;
-  });
-  return arrIdx || -1;
+  return arr.findIndex((element) => element === value);
 }
 
 // export를 수정하지 마세요.
