@@ -12,10 +12,22 @@
  */
 
 // TODO: filterEven 함수를 작성하세요.
-function filterEven() {}
+function filterEven(arr) {
+  let even = arr.filter(function (number) {
+    return number % 2 === 0;
+  });
+
+  return even;
+}
 
 // TODO: filterOdd 함수를 작성하세요.
-function filterOdd() {}
+function filterOdd(arr) {
+  let odd = arr.filter(function (number) {
+    return number % 2 === 1;
+  });
+
+  return odd;
+}
 
 // export를 수정하지 마세요.
 export { filterEven, filterOdd };
